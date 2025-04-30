@@ -187,7 +187,7 @@
 &kp LEFT_CONTROL  &kp A         &kp S         &kp D      &kp F                &kp G                     &kp H                   &kp J          &kp K            &kp L       &mt2 SEMI LBKT        &mt2 SQT RBKT
 &kp LSHFT         &kp Z         &kp X         &kp C      &kp V                &kp B                     &kp N                   &kp M          &kp COMMA        &kp PERIOD  &mt2 BACKSLASH SLASH  &kp MINUS
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &mo SECONDARY_LAYER  &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp BACKSPACE  &kp RET          &kp LEFT    &kp DOWN              &kp RIGHT
-                                &mkp RCLK     &mkp LCLK  &mkp MCLK            &none                     &allow_pageup           &allow_home    &allow_pagedown  &allow_end
+                                &mkp LCLK     &mkp MCLK  &mkp RCLK            &none                     &allow_pageup           &allow_home    &allow_pagedown  &allow_end
             >;
         };
 
