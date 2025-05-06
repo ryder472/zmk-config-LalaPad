@@ -190,7 +190,7 @@
         };
 
         up {
-            bindings = <&kp UP_ARROW>;
+            bindings = <&kp UP>;
             key-positions = <12 10>;
             layers = <8>;
         };
@@ -208,7 +208,7 @@
         };
 
         prev {
-            bindings = <&kp LEFT_ARROW>;
+            bindings = <&kp LEFT>;
             key-positions = <12 29>;
             layers = <8>;
         };
