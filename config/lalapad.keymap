@@ -192,25 +192,25 @@
         up {
             bindings = <&kp UP>;
             key-positions = <12 10>;
-            layers = <8>;
+            layers = <CURSOR_LAYER>;
         };
 
         down {
             bindings = <&kp DOWN>;
             key-positions = <12 30>;
-            layers = <8>;
+            layers = <CURSOR_LAYER>;
         };
 
         next {
             bindings = <&kp RIGHT>;
             key-positions = <12 16>;
-            layers = <8>;
+            layers = <CURSOR_LAYER>;
         };
 
         prev {
             bindings = <&kp LEFT>;
             key-positions = <12 29>;
-            layers = <8>;
+            layers = <CURSOR_LAYER>;
         };
     };
 
