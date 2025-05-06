@@ -13,7 +13,7 @@
 #define SCROLL_R_LAYER  5
 #define MOUSE_L_LAYER   6
 #define SCROLL_L_LAYER  7
-#define cursor_layer 8
+#define CURSOR_LAYER    8
 
 // Mouse Scroll Value
 
@@ -311,7 +311,7 @@
             >;
         };
 
-        cursor_layer {
+        CURSOR_LAYER {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans
 &none   &trans  &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans  &trans
