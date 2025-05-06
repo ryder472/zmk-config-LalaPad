@@ -13,6 +13,7 @@
 #define SCROLL_R_LAYER  5
 #define MOUSE_L_LAYER   6
 #define SCROLL_L_LAYER  7
+#define cursor_layer 8
 
 // Mouse Scroll Value
 
