@@ -188,30 +188,6 @@
             bindings = <&kp LANG1>;
             key-positions = <43 44>;
         };
-
-        up {
-            bindings = <&kp UP>;
-            key-positions = <12 10>;
-            layers = <CURSOR_LAYER>;
-        };
-
-        down {
-            bindings = <&kp DOWN>;
-            key-positions = <12 30>;
-            layers = <CURSOR_LAYER>;
-        };
-
-        next {
-            bindings = <&kp RIGHT>;
-            key-positions = <12 16>;
-            layers = <CURSOR_LAYER>;
-        };
-
-        prev {
-            bindings = <&kp LEFT>;
-            key-positions = <12 29>;
-            layers = <CURSOR_LAYER>;
-        };
     };
 
     keymap {
@@ -222,11 +198,11 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&mt2 ESC TAB      &kp Q         &kp W         &kp E      &kp R                &kp T                     &kp Y                   &kp U          &kp I            &kp O       &kp P                 &mt AT_SIGN EQUAL
-&kp LEFT_CONTROL  &kp A         &kp S         &kp D      &kp F                &kp G                     &kp H                   &kp J          &kp K            &kp L       &mt2 SEMI LBKT        &mt2 SQT RBKT
-&kp LSHFT         &kp Z         &kp X         &kp C      &kp V                &kp B                     &kp N                   &kp M          &kp COMMA        &kp PERIOD  &mt2 BACKSLASH SLASH  &mt2 UNDERSCORE MINUS
-&mo 8             &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &mo SECONDARY_LAYER  &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp BACKSPACE  &kp RET          &kp LEFT    &kp DOWN              &kp ASTRK
-                                &mkp LCLK     &mkp MCLK  &mkp RCLK            &none                     &allow_pageup           &allow_home    &allow_pagedown  &allow_end
+&mt2 ESC TAB      &kp Q         &kp W         &kp E      &kp R      &kp T        &kp Y          &kp U          &kp I            &kp O       &kp P                 &mt AT_SIGN EQUAL
+&kp LEFT_CONTROL  &kp A         &kp S         &kp D      &kp F      &kp G        &kp H          &kp J          &kp K            &kp L       &mt2 SEMI LBKT        &mt2 SQT RBKT
+&kp LSHFT         &kp Z         &kp X         &kp C      &kp V      &kp B        &kp N          &kp M          &kp COMMA        &kp PERIOD  &mt2 BACKSLASH SLASH  &mt2 UNDERSCORE MINUS
+&mo 0             &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &mo 1      &lt 2 LANG2  &lt 3 LANG1    &kp BACKSPACE  &kp RET          &kp LEFT    &kp DOWN              &kp ASTRK
+                                &mkp LCLK     &mkp MCLK  &mkp RCLK  &none        &allow_pageup  &allow_home    &allow_pagedown  &allow_end
             >;
         };
 
@@ -235,11 +211,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp TILDE  &mt2 EXCLAMATION NUMBER_1  &mt2 DOUBLE_QUOTES NUMBER_2  &mt2 HASH NUMBER_3              &mt2 DOLLAR NUMBER_4             &mt2 PERCENT NUMBER_5  &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&trans     &mt2 AMPERSAND NUMBER_6    &mt2 SINGLE_QUOTE NUMBER_7   &mt2 LEFT_PARENTHESIS NUMBER_8  &mt2 RIGHT_PARENTHESIS NUMBER_9  &kp NUMBER_0           &kp HOME       &kp END          &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans     &trans                     &trans                       &trans                          &trans                           &trans                 &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans     &trans                     &trans                       &trans                          &trans                           &kp CAPS               &trans         &kp DELETE       &trans           &kp KP_NUMBER_0  &dot_comma       &kp KP_ENTER
-                                      &trans                       &trans                          &trans                           &trans                 &trans         &trans           &trans           &trans
+&kp TILDE  &mt2 EXCLAMATION NUMBER_1  &mt2 DOUBLE_QUOTES NUMBER_2  &mt2 HASH NUMBER_3              &mt2 DOLLAR NUMBER_4             &mt2 PERCENT NUMBER_5  &kp PAGE_UP    &kp PRINTSCREEN  &kp UP_ARROW    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
+&trans     &mt2 AMPERSAND NUMBER_6    &mt2 SINGLE_QUOTE NUMBER_7   &mt2 LEFT_PARENTHESIS NUMBER_8  &mt2 RIGHT_PARENTHESIS NUMBER_9  &kp NUMBER_0           &kp HOME       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans     &trans                     &trans                       &trans                          &trans                           &trans                 &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&trans     &trans                     &trans                       &trans                          &trans                           &kp CAPS               &trans         &kp DELETE       &trans          &kp KP_NUMBER_0  &dot_comma       &kp KP_ENTER
+                                      &trans                       &trans                          &trans                           &trans                 &trans         &trans           &trans          &trans
             >;
         };
 
@@ -271,7 +247,7 @@
             display-name = "mouse_r_layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo SCROLL_R_LAYER
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 5
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
@@ -292,11 +268,11 @@
         MOUSE_L_LAYER {
             display-name = "mouse_l_layer";
             bindings = <
-&trans              &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&mo SCROLL_R_LAYER  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans              &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans              &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&mo 5   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                   &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -306,16 +282,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        CURSOR_LAYER {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans
-&none   &trans  &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
