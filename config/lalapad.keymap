@@ -96,7 +96,6 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
-
             tap-ms = <20>;
             label = "SCROLL_LEFT_RIGHT";
         };
@@ -107,7 +106,6 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
 
-
             tap-ms = <20>;
             label = "SCROLL_RIGHT_LEFT";
         };
@@ -117,11 +115,9 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
 
-
             tap-ms = <20>;
             label = "VOLUME_UP_DOWN";
         };
-
 
         dot_comma: dot_comma {
             compatible = "zmk,behavior-mod-morph";
